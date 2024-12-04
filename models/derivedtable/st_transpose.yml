@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: st_transpose
+    description: "This model transposes the monthly revenue data into a tall table format"
+    columns:
+      - name: key
+        description: "Unique hash key combining ID and month."
+        data_type: VARCHAR
+      - name: id
+        description: "Unique identifier from the source table."
+        data_type: INT
+      - name: name
+        description: "Name associated with the ID."
+        data_type: VARCHAR
+      - name: month
+        description: "Month name (e.g., 'jan', 'feb')."
+        data_type: VARCHAR
+      - name: revenue
+        description: "Revenue for the specific month."
+        data_type: INT
+    tests:
+      - unique:
+          column_name: key
+      - not_null:
+          column_name: key
+          

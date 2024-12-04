@@ -1,0 +1,52 @@
+version: 2
+
+sources:
+  - name: awsdatacatalog        # Replace with your source database name
+    schema: s3db        # Replace with your schema
+    tables:
+      - name: month_src       # Replace with your actual table name
+        description: "The source table containing revenue data for each month."
+        columns:
+          - name: id
+            description: "Unique identifier for each record."
+            data_type: INT
+          - name: name
+            description: "Name associated with the ID."
+            data_type: VARCHAR
+          - name: jan
+            description: "Revenue for January."
+            data_type: INT
+          - name: feb
+            description: "Revenue for February."
+            data_type: INT
+          - name: mar
+            description: "Revenue for March."
+            data_type: INT
+          - name: apr
+            description: "Revenue for April."
+            data_type: INT
+          - name: may
+            description: "Revenue for May."
+            data_type: INT
+          - name: jun
+            description: "Revenue for June."
+            data_type: INT
+          - name: jul
+            description: "Revenue for July."
+            data_type: INT
+          - name: aug
+            description: "Revenue for August."
+            data_type: INT
+          - name: sep
+            description: "Revenue for September."
+            data_type: INT
+          - name: oct
+            description: "Revenue for October."
+            data_type: INT
+          - name: nov
+            description: "Revenue for November."
+            data_type: INT
+          - name: dec
+            description: "Revenue for December."
+            data_type: INT
+            
