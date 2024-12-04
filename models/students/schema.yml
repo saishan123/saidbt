@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: student
+    description: "This table contains student information including demographics, enrollment details, and GPA."
+    columns:
+      - name: student_id
+        description: "Unique identifier for each student."
+        tests:
+          - not_null
+          - unique
