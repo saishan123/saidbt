@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: st_tr
+    description: "This model transposes the monthly revenue data into a tall table format"
+    columns:
+      - name: id
+        description: "Unique identifier from the source table."
+        data_type: INT
+      - name: name
+        description: "Name associated with the ID."
+        data_type: VARCHAR
+      - name: key
+        description: "Unique hash key combining ID and month."
+        data_type: VARCHAR
+           
